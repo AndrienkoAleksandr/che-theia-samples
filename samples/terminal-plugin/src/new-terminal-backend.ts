@@ -161,7 +161,7 @@ export function start(context: theia.PluginContext) {
 function createTerminalWithOptions(): theia.Terminal {
     const termOptions: theia.TerminalOptions = {
         name: 'Test terminal',
-        shellPath: '/bin/bash'
+        shellPath: 'sh'
     }
     return theia.window.createTerminal(termOptions);
 }
